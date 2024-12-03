@@ -29,33 +29,64 @@
     filter: none !important; /* Removes any potential overlay effects */
 }
 
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link {
+        font-family: sans-serif;
+      font-size: 1rem;
+      margin-right: 15px;
+      transition: color 0.3s;
+      
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ffc107;
+    }
+    .btn-outline-primary {
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 10px 15px !important;
+      color: black;
+    }
+    .btn-outline-primary:hover {
+      background-color: #0d6efd;
+      border-color: #ffc107;
+      color:white;
+    }
+   
 </style>
   <body>
 <!-- navbar -->
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
       <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="tel:+918375085627">+91 8375085627</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="aboutus.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a href="contact.html" class="btn btn-outline-primary">Contact Us</a>
           </li>
-        
         </ul>
-      
       </div>
     </div>
   </nav>
+  
+  
 <!-- Hero Carousel -->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <!-- Carousel Inner -->
@@ -147,85 +178,45 @@
 </section>
    <!-- end -->
 
-<!-- product we offer -->
-<section class="products-offer py-5">
-    <div class="container">
-      <h2 class="text-center mb-5 why-heading">Products We Offer</h2>
-      
-      <div class="row">
-        <!-- Polo T-Shirts -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="images/Customized-Polo-T-Shirts-Women.jpg" class="card-img-top" alt="Polo T-Shirt">
-            <div class="card-body">
-              <h5 class="card-title">Polo T-Shirts</h5>
-              <p class="card-text">High-quality Polo T-shirts available in various colors and sizes, perfect for casual wear.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Round Neck T-Shirts -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="images/roundneckorg.jpg" class="card-img-top" alt="Round Neck T-Shirt">
-            <div class="card-body">
-              <h5 class="card-title">Round Neck T-Shirts</h5>
-              <p class="card-text">Comfortable round neck t-shirts that are perfect for everyday wear or custom printing.</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Hoodies -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="images/hoodiesorg.jpg" class="card-img-top" alt="Hoodies">
-            <div class="card-body">
-              <h5 class="card-title">Hoodies</h5>
-              <p class="card-text">Stylish and warm hoodies, available in a variety of designs and colors for all seasons.</p>
-            </div>
-          </div>
-        </div>
+   <div class="product-container">
+    <h2 class="section-title">Our Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-item-1">
+        <img src="images/Customized-Polo-T-Shirts-Women.jpg" alt="Product 1">
+        <p class="product-title-1">Polo T-Shirts</p>
       </div>
-      
-      <div class="row">
-        <!-- Corporate Wear -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="images/corporate-wear.webp" class="card-img-top" alt="Corporate Wear">
-            <div class="card-body">
-              <h5 class="card-title">Corporate Wear</h5>
-              <p class="card-text">Premium corporate wear that ensures a professional look, ideal for office and events.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Caps -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="images/capscustomized.webp" class="card-img-top" alt="Caps">
-            <div class="card-body">
-              <h5 class="card-title">Caps</h5>
-              <p class="card-text">Trendy caps for casual and promotional use, available in various styles and colors.</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Tote Bags -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="images/totebags.webp" class="card-img-top" alt="Tote Bags">
-            <div class="card-body">
-              <h5 class="card-title">Tote Bags</h5>
-              <p class="card-text">Eco-friendly and stylish tote bags, perfect for everyday use or custom branding.</p>
-            </div>
-          </div>
-        </div>
+      <!-- Product 2 -->
+      <div class="product-item-2">
+        <img src="images/neck-tsirts-org.webp" alt="Product 2">
+        <p class="product-title-2">Round Neck T-Shirts</p>
       </div>
+      <!-- Product 3 -->
+      <div class="product-item-3">
+        <img src="images/hoodiesorg.jpg" alt="Product 3">
+        <p class="product-title-3">Hoodies</p>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-item-4">
+        <img src="images/corporate-wear.webp" alt="Product 4">
+        <p class="product-title-4">Corporate Wear</p>
+      </div>
+
+ <!-- Product 3 -->
+ <div class="product-item-3">
+    <img src="images/capscustomized.webp" alt="Product 3">
+    <p class="product-title-3">Caps</p>
+  </div>
+
+   <!-- Product 3 -->
+   <div class="product-item-3">
+    <img src="images/totebags.webp" alt="Product 3">
+    <p class="product-title-3">Tote Bags</p>
+  </div>
+
     </div>
-  </section>
+  </div>
   
-
-
   
 <!-- google reviews -->
 <h2 class="text-center mt-5 why-heading">Real Customer Reviews</h2>
@@ -404,7 +395,7 @@
 
 
 <!-- slick slider our product -->
-<h2 class="why-heading text-center mt-5">Our Work From Clients</h2>
+<h2 class="why-heading text-center mt-5">Made for our customers</h2>
 <div class="container-fluid unique-slider-container">
   <div class="unique-slider">
       <div class="unique-slider-item"><img src="images/final pics for work sample/final pics for work sample/94.jpg" alt="Image 1"></div>
@@ -464,6 +455,8 @@
     <!-- our brands -->
     <section class="video-section py-5">
         <div class="container">
+            <h2 class="why-heading mb-5 text-center">Different printing methods we offer</h2>
+
             <!-- First Row of Videos -->
             <div class="row">
                 <div class="col-md-6 mb-4">
@@ -551,8 +544,8 @@
             <!-- Stat 1 -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="stat-item">
-                    <h3 class="text-white">1000+</h3>
-                    <p class="text-white">Projects Completed</p>
+                    <h3 class="text-white">10000+</h3>
+                    <p class="text-white">Orders Completed</p>
                 </div>
             </div>
             <!-- Stat 2 -->
@@ -565,14 +558,14 @@
             <!-- Stat 3 -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="stat-item">
-                    <h3 class="text-white">25+</h3>
+                    <h3 class="text-white">10+</h3>
                     <p class="text-white">Years of Experience</p>
                 </div>
             </div>
             <!-- Stat 4 -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="stat-item">
-                    <h3 class="text-white">50+</h3>
+                    <h3 class="text-white">1000+</h3>
                     <p class="text-white">Brand Partnerships</p>
                 </div>
             </div>

@@ -469,9 +469,7 @@ h2{
     transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
-    background-color: #E74C3C;
-}
+
 
 .ctabtnoutline {
     border: 2px solid #fff;
@@ -481,10 +479,6 @@ h2{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-outline-light:hover {
-    background-color: #E74C3C;
-    color:white;
-}
 
 @media (max-width: 768px) {
     .cta-title {
@@ -799,7 +793,7 @@ h2{
             align-items: center; /* Center icon vertically */
             justify-content: center; /* Center icon horizontally */
             transition: background-color 0.3s; /* Transition for hover effect */
-            font-size: 1.5em; /* Icon size */
+            font-size: 30px !important; /* Icon size */
         }
         
         .call-button {
@@ -816,41 +810,10 @@ h2{
         
 
    
-/* Navbar Styling */
-.navbar-custom {
-    background-color: #ffffff; /* White Background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft Shadow */
-    padding: 0.8rem 1rem;
-    transition: background-color 0.3s ease;
+.navbar a{
+    padding: 10px 0px;
+    margin-left: 10px;
 }
-
-/* Navbar Hover Effects */
-.navbar-custom:hover {
-    background-color: #f8f9fa; /* Slight Background Change on Hover */
-}
-
-/* Navbar Brand Logo */
-.navbar-brand .logo {
-    height: 40px; /* Adjust Logo Size */
-    transition: transform 0.3s ease;
-}
-
-.navbar-brand:hover .logo {
-    transform: scale(1.1); /* Zoom Effect on Hover */
-}
-
-/* Navbar Links */
-.navbar-custom .nav-link {
-    font-size: 16px;
-    font-weight: 500;
-    color: #333333;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-    position: relative;
-}
-      
-      
       
 /* slider  */
 /* Custom Carousel Card Styling */
@@ -967,3 +930,72 @@ border-radius: 20px;
   .video-section h4{
     text-align: center;
   }
+
+
+  .product-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mobile: 2 columns */
+    gap: 15px;
+  }
+  .product-item-1, .product-item-2, .product-item-3, .product-item-4 {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+  }
+  .product-item-1 img, 
+  .product-item-2 img, 
+  .product-item-3 img, 
+  .product-item-4 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-title-1,
+  .product-title-2,
+  .product-title-3,
+  .product-title-4 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr); /* Tablet: 3 columns */
+    }
+  
+  }
+  @media (min-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
+    }
+  }
+  /* navbar */
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+ 
+  .btncontact {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 50px;
+  }
+ 
