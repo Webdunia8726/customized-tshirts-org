@@ -783,7 +783,7 @@ h2{
         }
         
         .contact-buttons a {
-            background-color: #25D366; /* WhatsApp color */
+            background-color: #009688; /* WhatsApp color */
             color: white;
             text-decoration: none;
             width: 60px; /* Width for circular buttons */
@@ -794,18 +794,19 @@ h2{
             justify-content: center; /* Center icon horizontally */
             transition: background-color 0.3s; /* Transition for hover effect */
             font-size: 30px !important; /* Icon size */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         }
         
         .call-button {
-            background-color: #4CAF50; /* Call button color */
+            background-color: #009688; /* Call button color */
         }
         
         .call-button:hover {
-            background-color: #45a049; /* Darker green on hover */
+            background-color:#009688; /* Darker green on hover */
         }
         
         .whatsapp-button:hover {
-            background-color: #1DA1F2; /* Darker WhatsApp color on hover */
+            background-color: #009688; /* Darker WhatsApp color on hover */
         }
         
 
@@ -871,9 +872,17 @@ h2{
   }
   
  
+  .review-image {
+    display: flex; /* Enables a row layout */
+    justify-content: center; /* Centers the images within the container */
+    gap: 10px; /* Adds space between the images */
+    margin-top: 12px; /* Optional: Adds spacing above the container */
+    height: 160px;
+    width: 180px;
+
+  }
   
-  
-  
+ 
   
   /* Media Queries */
   @media (max-width: 768px) {
@@ -900,6 +909,7 @@ h2{
       font-size: 13px;
     }
   }
+
   
   /* Google Reviews Header Styling */
   .googlereview {
@@ -931,56 +941,6 @@ border-radius: 20px;
     text-align: center;
   }
 
-
-  .product-container {
-    max-width: 1200px;
-    margin: auto;
-  }
-  .section-title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Mobile: 2 columns */
-    gap: 15px;
-  }
-  .product-item-1, .product-item-2, .product-item-3, .product-item-4 {
-    text-align: center;
-    padding: 15px;
-    border-radius: 8px;
-    transition: box-shadow 0.3s ease;
-  }
-  .product-item-1 img, 
-  .product-item-2 img, 
-  .product-item-3 img, 
-  .product-item-4 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .product-title-1,
-  .product-title-2,
-  .product-title-3,
-  .product-title-4 {
-    margin-top: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-  }
-  /* Responsive Design */
-  @media (min-width: 768px) {
-    .product-grid {
-      grid-template-columns: repeat(3, 1fr); /* Tablet: 3 columns */
-    }
-  
-  }
-  @media (min-width: 1024px) {
-    .product-grid {
-      grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
-    }
-  }
   /* navbar */
   .navbar-brand {
     font-size: 1.5rem;
@@ -999,3 +959,153 @@ border-radius: 20px;
     border-radius: 50px;
   }
  
+
+  /* stylish attractive */
+ /* CSS for Product Cards */
+.products-offer {
+    background-color: #f8f2f2;
+    padding: 3rem 0;
+  }
+  
+
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-img-top {
+    width: 100%; /* Ensures the image matches the card width */
+    height: 250px; /* Maintain the desired height */
+    object-fit: cover; /* Ensures the entire image is visible without cropping */
+    object-position: center; /* Centers the image within the container */
+    background-color: #f4f4f4; /* Optional: Adds a neutral background for empty areas */
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+ 
+
+
+
+  #contact {
+    background-color: #f8f9fa;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0056b3;
+    margin-bottom: 20px;
+  }
+  
+  /* Ensure equal height for left and right sections */
+  #contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  
+  .contact-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-card i {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-right: 10px;
+  }
+  
+  .contact-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .contact-card ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .contact-card ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-card ul li i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #0056b3;
+  }
+  
+  /* Google Map Styling */
+  #map iframe {
+    border-radius: 10px;
+    border: 2px solid #e3e3e3;
+    height: 500px; /* Ensures the iframe fills its container */
+  }
+  
+  #contact a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #contact .row {
+      flex-direction: column;
+    }
+    #map iframe {
+        border-radius: 10px;
+        border: 2px solid #e3e3e3;
+        height: 300px; /* Ensures the iframe fills its container */
+      }
+      
+    .contact-card {
+      margin-bottom: 30px;
+    }
+  }
+  
